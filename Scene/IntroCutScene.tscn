@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://dne14jndijxl5"]
+
+[ext_resource type="Texture2D" uid="uid://du8xcs16x8v0r" path="res://Assets/AbutPalm.png" id="2_hs0wx"]
+[ext_resource type="PackedScene" uid="uid://xdin34owfeoc" path="res://Scene/MenuButton.tscn" id="3_xnqg0"]
+[ext_resource type="Script" path="res://Scene/CutSceneSkipper.gd" id="4_yfbob"]
+
+[sub_resource type="Animation" id="Animation_c3f7p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AbutPalm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(112, 112)]
+}
+
+[sub_resource type="Animation" id="Animation_8rvkb"]
+resource_name = "Test"
+length = 5.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AbutPalm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2.6, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(112, 112), Vector2(344, 216), Vector2(680, 120), Vector2(112, 112)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tv8ir"]
+_data = {
+"RESET": SubResource("Animation_c3f7p"),
+"Test": SubResource("Animation_8rvkb")
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AbutPalm" type="Sprite2D" parent="."]
+position = Vector2(112, 112)
+texture = ExtResource("2_hs0wx")
+
+[node name="GoBack" parent="." instance=ExtResource("3_xnqg0")]
+offset_left = 184.0
+offset_top = 16.0
+offset_right = 536.0
+offset_bottom = 104.0
+text = "Go Back"
+refrence_path = "res://Scene/Overworld.tscn"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tv8ir")
+}
+autoplay = "Test"
+
+[node name="CutSceneSkipper" type="Label" parent="."]
+offset_left = 288.0
+offset_top = 288.0
+offset_right = 390.0
+offset_bottom = 311.0
+text = "Press To Skip"
+script = ExtResource("4_yfbob")
+refrence_path = "res://Scene/Overworld.tscn"

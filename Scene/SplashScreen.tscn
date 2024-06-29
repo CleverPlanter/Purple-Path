@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl5w0nlojgoiv"]
+
+[ext_resource type="Texture2D" uid="uid://d8re42sfsws5" path="res://Assets/TitleScreenPlaceHolder.jpg" id="1_787qh"]
+[ext_resource type="PackedScene" uid="uid://xdin34owfeoc" path="res://Scene/MenuButton.tscn" id="2_sybjm"]
+
+[node name="Node" type="Node"]
+
+[node name="TitleScreenPlaceHolder" type="Sprite2D" parent="."]
+position = Vector2(640, 400)
+texture = ExtResource("1_787qh")
+
+[node name="MenuButtons" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.0
+offset_top = -119.5
+offset_right = 136.0
+offset_bottom = 119.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="mnuNewGame" parent="MenuButtons" instance=ExtResource("2_sybjm")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../mnuExit")
+focus_neighbor_bottom = NodePath("../mnuOptions")
+text = "New Game"
+refrence_path = "res://Scene/IntroCutScene.tscn"
+start_focused = true
+
+[node name="mnuContinue" parent="MenuButtons" instance=ExtResource("2_sybjm")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../mnuExit")
+focus_neighbor_bottom = NodePath("../mnuOptions")
+disabled = true
+text = "Continue
+"
+refrence_path = "res://Scene/NewGame.tscn"
+
+[node name="mnuOptions" parent="MenuButtons" instance=ExtResource("2_sybjm")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../mnuNewGame")
+focus_neighbor_bottom = NodePath("../mnuExit")
+text = "Options
+"
+refrence_path = "res://Scene/options.tscn"
+
+[node name="mnuExit" parent="MenuButtons" instance=ExtResource("2_sybjm")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../mnuOptions")
+focus_neighbor_bottom = NodePath("../mnuNewGame")
+text = "Exit"

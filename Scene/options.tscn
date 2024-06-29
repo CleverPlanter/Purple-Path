@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddrarx4hntstu"]
+
+[ext_resource type="Texture2D" uid="uid://c5t03l7jentxf" path="res://Assets/AchMilSalmBeauty.png" id="1_rfqw6"]
+[ext_resource type="PackedScene" uid="uid://xdin34owfeoc" path="res://Scene/MenuButton.tscn" id="2_86cc2"]
+
+[node name="Options" type="Node2D"]
+
+[node name="AchMilSalmBeauty" type="Sprite2D" parent="."]
+position = Vector2(112, 112)
+texture = ExtResource("1_rfqw6")
+
+[node name="Button" parent="." instance=ExtResource("2_86cc2")]
+offset_left = 184.0
+offset_top = 16.0
+offset_right = 536.0
+offset_bottom = 104.0
+text = "Go Back"
+refrence_path = "res://Scene/SplashScreen.tscn"

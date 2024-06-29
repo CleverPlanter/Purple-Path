@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c531fyg1uiij5"]
+
+[ext_resource type="Texture2D" uid="uid://c5t03l7jentxf" path="res://Assets/AchMilSalmBeauty.png" id="1_dtpaq"]
+[ext_resource type="PackedScene" uid="uid://xdin34owfeoc" path="res://Scene/MenuButton.tscn" id="2_mpd6t"]
+
+[node name="Options" type="Node2D"]
+
+[node name="AchMilSalmBeauty" type="Sprite2D" parent="."]
+position = Vector2(112, 112)
+texture = ExtResource("1_dtpaq")
+
+[node name="Play" parent="." instance=ExtResource("2_mpd6t")]
+offset_left = 184.0
+offset_top = 1.0
+offset_right = 536.0
+offset_bottom = 89.0
+text = "Play"
+refrence_path = "res://Scene/framing_test.tscn"
+
+[node name="Menu" parent="." instance=ExtResource("2_mpd6t")]
+offset_left = 184.0
+offset_top = 104.0
+offset_right = 536.0
+offset_bottom = 192.0
+text = "Main Menu
+"
+refrence_path = "res://Scene/SplashScreen.tscn"

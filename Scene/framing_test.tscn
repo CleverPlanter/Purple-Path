@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhxn105lci42m"]
+
+[ext_resource type="Texture2D" uid="uid://niqqfel0bf5d" path="res://Assets/CRT Test.jpg" id="1_gprld"]
+[ext_resource type="Script" path="res://Scene/framing_test.gd" id="1_pfeoe"]
+[ext_resource type="PackedScene" uid="uid://xdin34owfeoc" path="res://Scene/MenuButton.tscn" id="3_d4uct"]
+[ext_resource type="PackedScene" uid="uid://cv7ck1o4slk4f" path="res://GUI/healthContainer.tscn" id="6_50pe2"]
+
+[node name="FramingTest" type="Node2D"]
+script = ExtResource("1_pfeoe")
+currentHealth = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+custom_minimum_size = Vector2(1280, 800)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 800.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Menu" parent="CanvasLayer/Control" instance=ExtResource("3_d4uct")]
+layout_mode = 0
+offset_left = 968.0
+offset_top = 704.0
+offset_right = 1249.0
+offset_bottom = 781.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Main Menu
+"
+refrence_path = "res://Scene/SplashScreen.tscn"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_gprld")
+expand_mode = 1
+
+[node name="healthContainer" parent="CanvasLayer" instance=ExtResource("6_50pe2")]
+offset_right = 0.0
+offset_bottom = 0.0
