@@ -18,7 +18,7 @@ func setMaxHearts(max: int):
 	HP = max
 	print(HP)
 
-#Health Update tests
+#Health Update tests Test git changes
 func _input(event):
 	if (event.is_pressed() and event.button_index == MOUSE_BUTTON_LEFT):
 		print(HP)
