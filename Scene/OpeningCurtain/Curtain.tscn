@@ -1,7 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://cprlvoohxdupb"]
+[gd_scene load_steps=6 format=3 uid="uid://cprlvoohxdupb"]
 
 [ext_resource type="Script" path="res://OpeningCurtain.gd" id="1_hvyhe"]
+[ext_resource type="Shader" path="res://Scene/OpeningCurtain/Curtain.gdshader" id="2_1r1j8"]
 [ext_resource type="Texture2D" uid="uid://bp63x4m36qjp1" path="res://Scene/OpeningCurtain/17-4-Black-Curtain-1-500x500.png" id="2_fgidf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qq7ow"]
+shader = ExtResource("2_1r1j8")
+shader_parameter/speed = 2.0
+shader_parameter/strength = 0.5
+shader_parameter/y_origin = 0.0
+shader_parameter/restrict_dir = 0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00p5m"]
 size = Vector2(432, 431.553)
@@ -10,6 +18,7 @@ size = Vector2(432, 431.553)
 script = ExtResource("1_hvyhe")
 
 [node name="Icon" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_qq7ow")
 position = Vector2(-219, -262)
 scale = Vector2(1, 1.198)
 texture = ExtResource("2_fgidf")
@@ -19,7 +28,6 @@ position = Vector2(5, 48.8313)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/Area2D"]
 position = Vector2(-7, -50.5008)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_00p5m")
 
 [connection signal="input_event" from="Icon/Area2D" to="." method="_on_area_2d_input_event"]

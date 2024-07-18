@@ -1,5 +1,5 @@
 extends Marker2D
-
+#Controls where the curtain will start and stop
 func _draw():
 	draw_circle(Vector2.ZERO, 75, Color.BLANCHED_ALMOND)
 	

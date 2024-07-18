@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3hqel5dx8j78"]
+[gd_scene load_steps=4 format=3 uid="uid://c3hqel5dx8j78"]
 
+[ext_resource type="Texture2D" uid="uid://bk6xwa4edw2tb" path="res://Scene/OpeningCurtain/curtainbkbeta.png" id="1_6se6h"]
 [ext_resource type="PackedScene" uid="uid://5l344uglb2r7" path="res://Scene/OpeningCurtain/drop_zone.tscn" id="1_guhjk"]
 [ext_resource type="PackedScene" uid="uid://cprlvoohxdupb" path="res://Scene/OpeningCurtain/Curtain.tscn" id="2_ho1kf"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Curtainbkbeta" type="Sprite2D" parent="."]
+position = Vector2(642, 404)
+scale = Vector2(1.11111, 1.23765)
+texture = ExtResource("1_6se6h")
 
 [node name="Left Side" type="Node2D" parent="."]
 
@@ -11,18 +17,18 @@
 position = Vector2(519, 696)
 
 [node name="drop_zone2" parent="Left Side" instance=ExtResource("1_guhjk")]
-position = Vector2(81, 695)
+position = Vector2(137, 714)
 
 [node name="CurtainL" parent="Left Side" instance=ExtResource("2_ho1kf")]
-position = Vector2(76, 673)
+position = Vector2(520, 689)
 
 [node name="Right Side" type="Node2D" parent="."]
 
 [node name="drop_zone3" parent="Right Side" instance=ExtResource("1_guhjk")]
-position = Vector2(875, 698)
+position = Vector2(627, 696)
 
 [node name="drop_zone4" parent="Right Side" instance=ExtResource("1_guhjk")]
-position = Vector2(1261, 694)
+position = Vector2(1224, 688)
 
 [node name="CurtainR" parent="Right Side" instance=ExtResource("2_ho1kf")]
-position = Vector2(1272, 685)
+position = Vector2(1059, 686)

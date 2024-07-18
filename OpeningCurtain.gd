@@ -35,3 +35,4 @@ func _input(event):
 						child.select()
 						rest_point = child.global_position
 						shortest_dist = distance
+
