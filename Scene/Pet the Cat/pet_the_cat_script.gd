@@ -3,22 +3,24 @@ extends Sprite2D
 @export var LeftTriggerZone: Node
 @export var RightTriggerZone: Node
 
-@export var counter: int = 0
+var petCounter: int
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#counter = 0
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if petCounter >= 10:
+		print("Winner!")
 	pass
 
 
 func _on_left_pet_zone_mouse_entered():
-	counter += 1
+	petCounter += 1
 	print ("left hover")
+	print (petCounter)
 	pass # Replace with function body.
 
 
