@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cprlvoohxdupb"]
+[gd_scene load_steps=6 format=3 uid="uid://djw5x0e4pvi7d"]
 
-[ext_resource type="Script" path="res://Scene/OpeningCurtain/OpeningCurtain.gd" id="1_t5fil"]
-[ext_resource type="Shader" path="res://Scene/OpeningCurtain/Curtain.gdshader" id="2_1r1j8"]
-[ext_resource type="Texture2D" uid="uid://bp63x4m36qjp1" path="res://Scene/OpeningCurtain/17-4-Black-Curtain-1-500x500.png" id="2_fgidf"]
+[ext_resource type="Script" path="res://Scene/OpeningCurtain/OpeningCurtain.gd" id="1_47t8j"]
+[ext_resource type="Shader" path="res://Scene/OpeningCurtain/Curtain.gdshader" id="2_1am4u"]
+[ext_resource type="Texture2D" uid="uid://bp63x4m36qjp1" path="res://Scene/OpeningCurtain/17-4-Black-Curtain-1-500x500.png" id="3_m3lde"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qq7ow"]
-shader = ExtResource("2_1r1j8")
+shader = ExtResource("2_1am4u")
 shader_parameter/speed = 0.5
 shader_parameter/strength = 0.1
 shader_parameter/y_origin = 0.0
@@ -15,13 +15,13 @@ shader_parameter/restrict_dir = 0
 size = Vector2(432, 431.553)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_t5fil")
+script = ExtResource("1_47t8j")
 
 [node name="Icon" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_qq7ow")
-position = Vector2(-219, -262)
+position = Vector2(231, -266)
 scale = Vector2(1, 1.198)
-texture = ExtResource("2_fgidf")
+texture = ExtResource("3_m3lde")
 
 [node name="Area2D" type="Area2D" parent="Icon"]
 position = Vector2(5, 48.8313)
