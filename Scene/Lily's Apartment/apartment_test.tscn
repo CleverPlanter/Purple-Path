@@ -33,7 +33,4 @@ transform = Transform3D(0.805991, -0.41787, 0.419241, 0.0255441, 0.732158, 0.680
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 4)
 target_game_scene = "Pet_The_Cat"
 
-[node name="AnotherMiniGameTrigger" parent="." instance=ExtResource("2_phatj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.52947, 0.779319, 0)
-
 [connection signal="body_entered" from="PetScratchTrigger" to="PetScratchTrigger" method="_on_body_entered"]

@@ -1,4 +1,4 @@
-extends Sprite2D
+extends Node
 
 @export var LeftTriggerZone: Node
 @export var RightTriggerZone: Node
@@ -14,8 +14,8 @@ func _ready():
 func _process(delta):
 	if petCounter >= 10:
 		print("Winner!")
+		queue_free()
 	pass
-
 
 func _on_left_pet_zone_mouse_entered():
 	petCounter += 1
