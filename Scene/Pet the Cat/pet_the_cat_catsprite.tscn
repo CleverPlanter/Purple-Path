@@ -1,12 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://7e1x7w4mlypv"]
+[gd_scene load_steps=5 format=3 uid="uid://7e1x7w4mlypv"]
 
 [ext_resource type="Script" path="res://Scene/Pet the Cat/pet_the_cat_script.gd" id="1_r7vwp"]
+[ext_resource type="Texture2D" uid="uid://0o1pdj1g0su2" path="res://Scene/Pet the Cat/PetTheCat.png" id="2_f1ugr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nyum2"]
-size = Vector2(180.5, 272.5)
+size = Vector2(200.5, 327.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_envxu"]
-size = Vector2(198.5, 268)
+size = Vector2(198.5, 332)
 
 [node name="CatSprite" type="Sprite2D" node_paths=PackedStringArray("LeftTriggerZone", "RightTriggerZone")]
 position = Vector2(377, 222)
@@ -15,22 +16,29 @@ LeftTriggerZone = NodePath("left_pet_zone")
 RightTriggerZone = NodePath("right_pet_zone")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 532.0
-offset_bottom = 271.0
+offset_left = 97.0
+offset_top = 66.0
+offset_right = 418.0
+offset_bottom = 233.0
 mouse_filter = 1
 mouse_default_cursor_shape = 2
 color = Color(0.270588, 0.278431, 0.505882, 1)
 
+[node name="Cat Sprite" type="Sprite2D" parent="."]
+position = Vector2(288, 133)
+scale = Vector2(0.291016, 0.291016)
+texture = ExtResource("2_f1ugr")
+
 [node name="left_pet_zone" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="left_pet_zone"]
-position = Vector2(93.75, 135.25)
+position = Vector2(109, 129)
 shape = SubResource("RectangleShape2D_nyum2")
 
 [node name="right_pet_zone" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="right_pet_zone"]
-position = Vector2(431.25, 132)
+position = Vector2(445, 130)
 shape = SubResource("RectangleShape2D_envxu")
 
 [connection signal="mouse_entered" from="left_pet_zone" to="." method="_on_left_pet_zone_mouse_entered"]

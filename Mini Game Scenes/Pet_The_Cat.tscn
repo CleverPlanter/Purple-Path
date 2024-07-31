@@ -16,7 +16,7 @@ func _process(delta):
 	pass
 "
 
-[node name="Pet_The_Cat" type="Node2D"]
+[node name="Cat" type="Node2D"]
 script = SubResource("GDScript_6nbmy")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -30,6 +30,6 @@ color = Color(0.345098, 0.152941, 0.180392, 1)
 offset_right = 1280.0
 offset_bottom = 328.0
 mouse_default_cursor_shape = 5
-color = Color(0.945098, 0.917647, 0.819608, 1)
+color = Color(0.933333, 0.917647, 0.870588, 1)
 
 [node name="CatSprite" parent="." instance=ExtResource("1_ex4gq")]
