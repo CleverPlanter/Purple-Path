@@ -1,0 +1,147 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6x5advx86kbe"]
+
+[ext_resource type="Texture2D" uid="uid://dhxuk3d6gluob" path="res://Assets/Teeth.png" id="1_513w2"]
+[ext_resource type="Script" path="res://Mini Game Scenes/BrushTeeth/Tooth.gd" id="2_j1jgy"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(301, 235)
+texture = ExtResource("1_513w2")
+
+[node name="Tooth Top" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+ToothHealth = -1
+
+[node name="Tooth Main HB" type="CollisionPolygon2D" parent="Tooth Top"]
+position = Vector2(14, -10)
+polygon = PackedVector2Array(13, -17, 21, -7, 24, 17, 24, 33, -13, 33, -12, -5, 0, -17)
+
+[node name="Tooth Top2" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top2"]
+position = Vector2(52, -16)
+polygon = PackedVector2Array(8, -12, 14, -5, 16, 17, 15, 30, -13, 33, -13, 7, 1, -13)
+
+[node name="Tooth Top3" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top3"]
+position = Vector2(81, -19)
+polygon = PackedVector2Array(10, -3, 11, 5, 8, 17, -6, 35, -13, 33, -13, 7, 2, -5)
+
+[node name="Tooth Top4" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top4"]
+position = Vector2(100, -20)
+polygon = PackedVector2Array(1, 7, 5, 12, 1, 28, -10, 36, -17, 32, -11, 18, -4, 10)
+
+[node name="Tooth Top5" type="Area2D" parent="."]
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top5"]
+position = Vector2(117, -20)
+polygon = PackedVector2Array(-1, 13, 1, 18, -4, 25, -13, 32, -17, 32, -11, 18, -6, 11)
+
+[node name="Tooth Top6" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top6"]
+position = Vector2(14, -10)
+polygon = PackedVector2Array(13, -17, 21, -7, 24, 17, 24, 33, -13, 33, -12, -5, 0, -17)
+
+[node name="Tooth Top7" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top7"]
+position = Vector2(52, -16)
+polygon = PackedVector2Array(8, -12, 14, -5, 16, 17, 15, 30, -13, 33, -13, 7, 1, -13)
+
+[node name="Tooth Top8" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top8"]
+position = Vector2(81, -19)
+polygon = PackedVector2Array(10, -3, 11, 5, 8, 17, -6, 35, -13, 33, -13, 7, 2, -5)
+
+[node name="Tooth Top9" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top9"]
+position = Vector2(100, -20)
+polygon = PackedVector2Array(1, 7, 5, 12, 1, 28, -10, 36, -17, 32, -11, 18, -4, 10)
+
+[node name="Tooth Top10" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Top10"]
+position = Vector2(117, -20)
+polygon = PackedVector2Array(-1, 13, 1, 18, -6, 24, -12, 29, -17, 32, -11, 18, -6, 11)
+
+[node name="Tooth Bot" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot"]
+position = Vector2(84, 2)
+polygon = PackedVector2Array(-1, 13, 1, 18, -4, 21, -11, 24, -11, 18, -6, 11)
+
+[node name="Tooth Bot2" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot2"]
+position = Vector2(72, 7)
+polygon = PackedVector2Array(0, 12, 1, 18, -4, 21, -12, 23, -12, 11, -7, 10)
+
+[node name="Tooth Bot3" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot3"]
+position = Vector2(52, 10)
+polygon = PackedVector2Array(5, 7, 6, 20, -3, 22, -14, 23, -14, 8, -5, 7)
+
+[node name="Tooth Bot4" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot4"]
+position = Vector2(29, 12)
+polygon = PackedVector2Array(6, 6, 6, 20, -3, 22, -16, 22, -16, 6, -5, 6)
+
+[node name="Tooth Bot6" type="Area2D" parent="."]
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot6"]
+position = Vector2(84, 2)
+polygon = PackedVector2Array(-1, 13, 1, 18, -4, 21, -11, 24, -11, 18, -6, 11)
+
+[node name="Tooth Bot7" type="Area2D" parent="."]
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot7"]
+position = Vector2(72, 7)
+polygon = PackedVector2Array(0, 12, 1, 18, -4, 21, -12, 23, -12, 11, -7, 10)
+
+[node name="Tooth Bot8" type="Area2D" parent="."]
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot8"]
+position = Vector2(52, 10)
+polygon = PackedVector2Array(5, 7, 6, 20, -3, 22, -14, 23, -14, 8, -5, 7)
+
+[node name="Tooth Bot9" type="Area2D" parent="."]
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot9"]
+position = Vector2(29, 12)
+polygon = PackedVector2Array(6, 6, 6, 20, -3, 22, -16, 22, -16, 6, -5, 6)
+
+[node name="Tooth Bot5" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot5"]
+position = Vector2(6, 14)
+polygon = PackedVector2Array(6, 5, 6, 20, -3, 22, -18, 20, -19, 4, -6, 4)

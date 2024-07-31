@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://md8yads0k74r"]
+
+[ext_resource type="Texture2D" uid="uid://dhxuk3d6gluob" path="res://Assets/Teeth.png" id="1_wntpl"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(304, 224)
+texture = ExtResource("1_wntpl")

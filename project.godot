@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Purple path"
-run/main_scene="res://Scene/SplashScreen.tscn"
+run/main_scene="res://Mini Game Scenes/BrushTeeth/BrushTeeth.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SignalBus="*res://Scene/SignalBus.gd"
 
 [display]
 
