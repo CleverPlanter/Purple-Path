@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwkj7x2cpd3eu"]
+
+[ext_resource type="Script" path="res://Scene/OpeningCurtain/OpeningCurtain.gd" id="1_7oc73"]
+[ext_resource type="Texture2D" uid="uid://ii3ow57gn0fa" path="res://icon.svg" id="2_d7hsj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljt75"]
+size = Vector2(120, 123)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yfjx4"]
+size = Vector2(121, 125)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, 2)
+script = ExtResource("1_7oc73")
+
+[node name="LeftCurtain" type="Sprite2D" parent="."]
+position = Vector2(-94, -6)
+texture = ExtResource("2_d7hsj")
+
+[node name="Area2D" type="Area2D" parent="LeftCurtain"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftCurtain/Area2D"]
+position = Vector2(-3, -4)
+shape = SubResource("RectangleShape2D_ljt75")
+
+[node name="RightCurtain" type="Sprite2D" parent="."]
+position = Vector2(75, 7)
+texture = ExtResource("2_d7hsj")
+
+[node name="Area2D" type="Area2D" parent="RightCurtain"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightCurtain/Area2D"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_yfjx4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
