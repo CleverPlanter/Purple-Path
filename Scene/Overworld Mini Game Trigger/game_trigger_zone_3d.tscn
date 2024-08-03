@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://4rfxwcggmeri"]
+
+[ext_resource type="Script" path="res://Scene/Overworld Mini Game Trigger/GameTriggerZone3D.gd" id="1_fhxot"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ekbcq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ghin"]
+
+[node name="GameTriggerZone3D" type="Area3D"]
+script = ExtResource("1_fhxot")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ekbcq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transparency = 0.82
+mesh = SubResource("BoxMesh_2ghin")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://drahd1wx8gxdu"]
+
+[ext_resource type="Script" path="res://Minigame Manager.gd" id="1_u0vp5"]
+
+[node name="Minigame Manager" type="Node"]
+script = ExtResource("1_u0vp5")
+
+[node name="Game Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 186.0
+offset_bottom = 143.0
+color = Color(0, 0.635294, 0.635294, 1)
