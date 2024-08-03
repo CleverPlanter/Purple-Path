@@ -1,147 +1,310 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6x5advx86kbe"]
+[gd_scene load_steps=23 format=3 uid="uid://b6x5advx86kbe"]
 
-[ext_resource type="Texture2D" uid="uid://dhxuk3d6gluob" path="res://Assets/Teeth.png" id="1_513w2"]
+[ext_resource type="Texture2D" uid="uid://dhxuk3d6gluob" path="res://Assets/ToothBrushing/Teeth.png" id="1_yrckw"]
 [ext_resource type="Script" path="res://Mini Game Scenes/BrushTeeth/Tooth.gd" id="2_j1jgy"]
+[ext_resource type="Texture2D" uid="uid://bc4yl5fkq3weh" path="res://Assets/Dirty Teeth/Tooth 1.png" id="3_18b75"]
+[ext_resource type="Texture2D" uid="uid://70ubo5dv1m2v" path="res://Assets/Dirty Teeth/Tooth 2.png" id="4_1u238"]
+[ext_resource type="Texture2D" uid="uid://cbgoxq5ghdtfi" path="res://Assets/ToothBrushing/Lips.png" id="4_dr2k1"]
+[ext_resource type="Texture2D" uid="uid://bfvfjw4msp4uv" path="res://Assets/Dirty Teeth/Tooth 3.png" id="5_0u7vf"]
+[ext_resource type="Texture2D" uid="uid://clmuceyj5mw6b" path="res://Assets/Dirty Teeth/Tooth 4.png" id="6_cid66"]
+[ext_resource type="Texture2D" uid="uid://cwm0b55d88e1s" path="res://Assets/Dirty Teeth/Tooth 5.png" id="7_klmo5"]
+[ext_resource type="Texture2D" uid="uid://diejutm1ahd7t" path="res://Assets/Dirty Teeth/Tooth 6.png" id="8_mvmu8"]
+[ext_resource type="Texture2D" uid="uid://dtq5klfr7vw4k" path="res://Assets/Dirty Teeth/Tooth 7.png" id="9_7bpw8"]
+[ext_resource type="Texture2D" uid="uid://cc185w4jfi5fp" path="res://Assets/Dirty Teeth/Tooth 8.png" id="10_0vnjh"]
+[ext_resource type="Texture2D" uid="uid://c8aoyf6gwyjp1" path="res://Assets/Dirty Teeth/Tooth 9.png" id="11_w7hlu"]
+[ext_resource type="Texture2D" uid="uid://wkixf0f5q26a" path="res://Assets/Dirty Teeth/Tooth 10.png" id="12_hibwg"]
+[ext_resource type="Texture2D" uid="uid://d1rvmuni1ycp0" path="res://Assets/Dirty Teeth/Tooth 11.png" id="13_43ov1"]
+[ext_resource type="Texture2D" uid="uid://bvle35gqt8gbr" path="res://Assets/Dirty Teeth/Tooth 12.png" id="14_h6qsi"]
+[ext_resource type="Texture2D" uid="uid://dk7up4i0mhmmh" path="res://Assets/Dirty Teeth/Tooth 13.png" id="15_wdika"]
+[ext_resource type="Texture2D" uid="uid://cg0846uw8cmff" path="res://Assets/Dirty Teeth/Tooth 14.png" id="16_6v2yk"]
+[ext_resource type="Texture2D" uid="uid://c80xmdhtwgv1a" path="res://Assets/Dirty Teeth/Tooth 15.png" id="17_ve44q"]
+[ext_resource type="Texture2D" uid="uid://cs23h4m6hg65e" path="res://Assets/Dirty Teeth/Tooth 16.png" id="18_deis2"]
+[ext_resource type="Texture2D" uid="uid://cb6dqvm3can6v" path="res://Assets/Dirty Teeth/Tooth 17.png" id="19_800d8"]
+[ext_resource type="Texture2D" uid="uid://di08pl2uwdngd" path="res://Assets/Dirty Teeth/Tooth 18.png" id="20_jbua7"]
+[ext_resource type="Texture2D" uid="uid://lkwprq3x4yhi" path="res://Assets/Dirty Teeth/Tooth 19.png" id="21_dk0fp"]
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(301, 235)
-texture = ExtResource("1_513w2")
+texture = ExtResource("1_yrckw")
 
-[node name="Tooth Top" type="Area2D" parent="."]
-script = ExtResource("2_j1jgy")
-ToothHealth = -1
-
-[node name="Tooth Main HB" type="CollisionPolygon2D" parent="Tooth Top"]
-position = Vector2(14, -10)
-polygon = PackedVector2Array(13, -17, 21, -7, 24, 17, 24, 33, -13, 33, -12, -5, 0, -17)
-
-[node name="Tooth Top2" type="Area2D" parent="."]
+[node name="Tooth 1" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
 script = ExtResource("2_j1jgy")
 
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top2"]
-position = Vector2(52, -16)
-polygon = PackedVector2Array(8, -12, 14, -5, 16, 17, 15, 30, -13, 33, -13, 7, 1, -13)
-
-[node name="Tooth Top3" type="Area2D" parent="."]
-script = ExtResource("2_j1jgy")
-
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top3"]
-position = Vector2(81, -19)
-polygon = PackedVector2Array(10, -3, 11, 5, 8, 17, -6, 35, -13, 33, -13, 7, 2, -5)
-
-[node name="Tooth Top4" type="Area2D" parent="."]
-script = ExtResource("2_j1jgy")
-
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top4"]
-position = Vector2(100, -20)
-polygon = PackedVector2Array(1, 7, 5, 12, 1, 28, -10, 36, -17, 32, -11, 18, -4, 10)
-
-[node name="Tooth Top5" type="Area2D" parent="."]
-
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top5"]
-position = Vector2(117, -20)
-polygon = PackedVector2Array(-1, 13, 1, 18, -4, 25, -13, 32, -17, 32, -11, 18, -6, 11)
-
-[node name="Tooth Top6" type="Area2D" parent="."]
+[node name="Dirty tooth" type="Sprite2D" parent="Tooth 1"]
+position = Vector2(107, 0.999725)
 rotation = 3.14159
-scale = Vector2(1, -1)
+scale = Vector2(0.93421, -0.93421)
+texture = ExtResource("3_18b75")
 
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top6"]
-position = Vector2(14, -10)
-polygon = PackedVector2Array(13, -17, 21, -7, 24, 17, 24, 33, -13, 33, -12, -5, 0, -17)
-
-[node name="Tooth Top7" type="Area2D" parent="."]
-rotation = 3.14159
-scale = Vector2(1, -1)
-
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top7"]
-position = Vector2(52, -16)
-polygon = PackedVector2Array(8, -12, 14, -5, 16, 17, 15, 30, -13, 33, -13, 7, 1, -13)
-
-[node name="Tooth Top8" type="Area2D" parent="."]
-rotation = 3.14159
-scale = Vector2(1, -1)
-
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top8"]
-position = Vector2(81, -19)
-polygon = PackedVector2Array(10, -3, 11, 5, 8, 17, -6, 35, -13, 33, -13, 7, 2, -5)
-
-[node name="Tooth Top9" type="Area2D" parent="."]
-rotation = 3.14159
-scale = Vector2(1, -1)
-
-[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth Top9"]
-position = Vector2(100, -20)
-polygon = PackedVector2Array(1, 7, 5, 12, 1, 28, -10, 36, -17, 32, -11, 18, -4, 10)
-
-[node name="Tooth Top10" type="Area2D" parent="."]
-rotation = 3.14159
-scale = Vector2(1, -1)
-
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Top10"]
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 1"]
+visible = false
 position = Vector2(117, -20)
 polygon = PackedVector2Array(-1, 13, 1, 18, -6, 24, -12, 29, -17, 32, -11, 18, -6, 11)
 
-[node name="Tooth Bot" type="Area2D" parent="."]
+[node name="Tooth 2" type="Area2D" parent="."]
 rotation = 3.14159
 scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
 
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot"]
+[node name="Dirty tooth2" type="Sprite2D" parent="Tooth 2"]
+position = Vector2(92.5723, 1.4932)
+rotation = 3.14159
+scale = Vector2(0.967103, -0.967105)
+texture = ExtResource("4_1u238")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 2"]
+visible = false
+position = Vector2(100, -20)
+polygon = PackedVector2Array(1, 7, 5, 12, 1, 28, -10, 36, -17, 32, -11, 18, -4, 10)
+
+[node name="Tooth 3" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth3" type="Sprite2D" parent="Tooth 3"]
+position = Vector2(78.227, -3.95744)
+rotation = 3.14159
+scale = Vector2(0.949863, -0.978733)
+texture = ExtResource("5_0u7vf")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 3"]
+visible = false
+position = Vector2(81, -19)
+polygon = PackedVector2Array(10, -3, 11, 5, 8, 17, -6, 35, -13, 33, -13, 7, 2, -5)
+
+[node name="Tooth 4" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth4" type="Sprite2D" parent="Tooth 4"]
+position = Vector2(52.0263, -7.00012)
+rotation = 3.14159
+scale = Vector2(0.998355, -0.979592)
+texture = ExtResource("6_cid66")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 4"]
+visible = false
+position = Vector2(52, -16)
+polygon = PackedVector2Array(8, -12, 14, -5, 16, 17, 15, 30, -13, 33, -13, 7, 1, -13)
+
+[node name="Tooth 5" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth5" type="Sprite2D" parent="Tooth 5"]
+position = Vector2(17.6085, -6.00005)
+rotation = 3.14159
+scale = Vector2(0.954285, -0.93421)
+texture = ExtResource("7_klmo5")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 5"]
+visible = false
+position = Vector2(14, -10)
+polygon = PackedVector2Array(13, -17, 21, -7, 24, 17, 24, 33, -13, 33, -12, -5, 0, -17)
+
+[node name="Tooth 6" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth6" type="Sprite2D" parent="Tooth 6"]
+position = Vector2(20.3915, -8)
+scale = Vector2(0.954285, 0.93421)
+texture = ExtResource("8_mvmu8")
+
+[node name="Tooth Main HB" type="CollisionPolygon2D" parent="Tooth 6"]
+visible = false
+position = Vector2(14, -10)
+polygon = PackedVector2Array(13, -17, 21, -7, 24, 17, 24, 33, -13, 33, -12, -5, 0, -17)
+
+[node name="tooth 7" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth7" type="Sprite2D" parent="tooth 7"]
+position = Vector2(54, -7.05593)
+scale = Vector2(0.93421, 0.977309)
+texture = ExtResource("9_7bpw8")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="tooth 7"]
+visible = false
+position = Vector2(52, -16)
+polygon = PackedVector2Array(8, -12, 14, -5, 16, 17, 15, 30, -13, 33, -13, 7, 1, -13)
+
+[node name="Tooth 8" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth8" type="Sprite2D" parent="Tooth 8"]
+position = Vector2(78.227, -4.95724)
+scale = Vector2(0.949864, 0.978733)
+texture = ExtResource("10_0vnjh")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 8"]
+visible = false
+position = Vector2(81, -19)
+polygon = PackedVector2Array(10, -3, 11, 5, 8, 17, -6, 35, -13, 33, -13, 7, 2, -5)
+
+[node name="Tooth 9" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth9" type="Sprite2D" parent="Tooth 9"]
+position = Vector2(92.9276, 2.00658)
+scale = Vector2(0.928643, 1.00044)
+texture = ExtResource("11_w7hlu")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 9"]
+visible = false
+position = Vector2(100, -20)
+polygon = PackedVector2Array(1, 7, 5, 12, 1, 28, -10, 36, -17, 32, -11, 18, -4, 10)
+
+[node name="Tooth 10" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth10" type="Sprite2D" parent="Tooth 10"]
+position = Vector2(108, 0)
+scale = Vector2(0.93421, 0.93421)
+texture = ExtResource("12_hibwg")
+
+[node name="Tooth Top C" type="CollisionPolygon2D" parent="Tooth 10"]
+visible = false
+position = Vector2(117, -20)
+polygon = PackedVector2Array(-1, 13, 1, 18, -4, 25, -13, 32, -17, 32, -11, 18, -6, 11)
+
+[node name="Tooth 11" type="Area2D" parent="."]
+rotation = 3.14159
+scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth11" type="Sprite2D" parent="Tooth 11"]
+position = Vector2(79, 21.9998)
+rotation = 3.14159
+scale = Vector2(0.93421, -0.93421)
+texture = ExtResource("21_dk0fp")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 11"]
+visible = false
 position = Vector2(84, 2)
 polygon = PackedVector2Array(-1, 13, 1, 18, -4, 21, -11, 24, -11, 18, -6, 11)
 
-[node name="Tooth Bot2" type="Area2D" parent="."]
+[node name="Tooth 12" type="Area2D" parent="."]
 rotation = 3.14159
 scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
 
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot2"]
+[node name="Dirty tooth12" type="Sprite2D" parent="Tooth 12"]
+position = Vector2(66, 22.9998)
+rotation = 3.14159
+scale = Vector2(0.93421, -0.93421)
+texture = ExtResource("20_jbua7")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 12"]
+visible = false
 position = Vector2(72, 7)
 polygon = PackedVector2Array(0, 12, 1, 18, -4, 21, -12, 23, -12, 11, -7, 10)
 
-[node name="Tooth Bot3" type="Area2D" parent="."]
+[node name="Tooth 13" type="Area2D" parent="."]
 rotation = 3.14159
 scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
 
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot3"]
+[node name="Dirty tooth13" type="Sprite2D" parent="Tooth 13"]
+position = Vector2(48, 24.9999)
+rotation = 3.14159
+scale = Vector2(0.93421, -0.93421)
+texture = ExtResource("19_800d8")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 13"]
+visible = false
 position = Vector2(52, 10)
 polygon = PackedVector2Array(5, 7, 6, 20, -3, 22, -14, 23, -14, 8, -5, 7)
 
-[node name="Tooth Bot4" type="Area2D" parent="."]
+[node name="Tooth 14" type="Area2D" parent="."]
 rotation = 3.14159
 scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
 
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot4"]
+[node name="Dirty tooth14" type="Sprite2D" parent="Tooth 14"]
+position = Vector2(25.0001, 25.9999)
+rotation = 3.14159
+scale = Vector2(0.93421, -0.93421)
+texture = ExtResource("18_deis2")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 14"]
+visible = false
 position = Vector2(29, 12)
 polygon = PackedVector2Array(6, 6, 6, 20, -3, 22, -16, 22, -16, 6, -5, 6)
 
-[node name="Tooth Bot6" type="Area2D" parent="."]
-
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot6"]
-position = Vector2(84, 2)
-polygon = PackedVector2Array(-1, 13, 1, 18, -4, 21, -11, 24, -11, 18, -6, 11)
-
-[node name="Tooth Bot7" type="Area2D" parent="."]
-
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot7"]
-position = Vector2(72, 7)
-polygon = PackedVector2Array(0, 12, 1, 18, -4, 21, -12, 23, -12, 11, -7, 10)
-
-[node name="Tooth Bot8" type="Area2D" parent="."]
-
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot8"]
-position = Vector2(52, 10)
-polygon = PackedVector2Array(5, 7, 6, 20, -3, 22, -14, 23, -14, 8, -5, 7)
-
-[node name="Tooth Bot9" type="Area2D" parent="."]
-
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot9"]
-position = Vector2(29, 12)
-polygon = PackedVector2Array(6, 6, 6, 20, -3, 22, -16, 22, -16, 6, -5, 6)
-
-[node name="Tooth Bot5" type="Area2D" parent="."]
+[node name="Tooth 15" type="Area2D" parent="."]
 rotation = 3.14159
 scale = Vector2(1, -1)
+script = ExtResource("2_j1jgy")
 
-[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth Bot5"]
+[node name="Dirty tooth15" type="Sprite2D" parent="Tooth 15"]
+position = Vector2(7.27475e-05, 26.4046)
+rotation = 3.14159
+scale = Vector2(1, -0.990915)
+texture = ExtResource("17_ve44q")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 15"]
+visible = false
 position = Vector2(6, 14)
 polygon = PackedVector2Array(6, 5, 6, 20, -3, 22, -18, 20, -19, 4, -6, 4)
+
+[node name="Tooth 16" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth16" type="Sprite2D" parent="Tooth 16"]
+position = Vector2(25.9276, 25.6711)
+scale = Vector2(1.00557, 0.967105)
+texture = ExtResource("16_6v2yk")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 16"]
+visible = false
+position = Vector2(29, 12)
+polygon = PackedVector2Array(6, 6, 6, 20, -3, 22, -16, 22, -16, 6, -5, 6)
+
+[node name="Tooth 17" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth17" type="Sprite2D" parent="Tooth 17"]
+position = Vector2(49, 25)
+scale = Vector2(0.93421, 0.93421)
+texture = ExtResource("15_wdika")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 17"]
+visible = false
+position = Vector2(52, 10)
+polygon = PackedVector2Array(5, 7, 6, 20, -3, 22, -14, 23, -14, 8, -5, 7)
+
+[node name="Tooth 18" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth18" type="Sprite2D" parent="Tooth 18"]
+position = Vector2(67, 23)
+scale = Vector2(0.93421, 0.93421)
+texture = ExtResource("14_h6qsi")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 18"]
+visible = false
+position = Vector2(72, 7)
+polygon = PackedVector2Array(0, 12, 1, 18, -4, 21, -12, 23, -12, 11, -7, 10)
+
+[node name="Tooth 19" type="Area2D" parent="."]
+script = ExtResource("2_j1jgy")
+
+[node name="Dirty tooth19" type="Sprite2D" parent="Tooth 19"]
+position = Vector2(81, 23)
+scale = Vector2(0.93421, 0.93421)
+texture = ExtResource("13_43ov1")
+
+[node name="Tooth Main R C" type="CollisionPolygon2D" parent="Tooth 19"]
+visible = false
+position = Vector2(84, 2)
+polygon = PackedVector2Array(-1, 13, 1, 18, -4, 21, -11, 24, -11, 18, -6, 11)
+
+[node name="Lips" type="Sprite2D" parent="."]
+position = Vector2(1, 9.25)
+scale = Vector2(1, 0.996599)
+texture = ExtResource("4_dr2k1")

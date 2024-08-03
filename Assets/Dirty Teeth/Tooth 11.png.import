@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhxuk3d6gluob"
-path="res://.godot/imported/Teeth.png-810aa0347e8064d214974f45c87c60cb.ctex"
+uid="uid://d1rvmuni1ycp0"
+path="res://.godot/imported/Tooth 11.png-46474370eb338da53f150d39729fae56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Teeth.png"
-dest_files=["res://.godot/imported/Teeth.png-810aa0347e8064d214974f45c87c60cb.ctex"]
+source_file="res://Assets/Dirty Teeth/Tooth 11.png"
+dest_files=["res://.godot/imported/Tooth 11.png-46474370eb338da53f150d39729fae56.ctex"]
 
 [params]
 

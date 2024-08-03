@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="11in"
+   height="8.5in"
+   viewBox="0 0 279.40001 215.9"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="ToothBrush.svg"
+   inkscape:export-filename="ToothBrush.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="765.69563"
+     inkscape:cy="478.81231"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="in"
+     inkscape:window-width="1431"
+     inkscape:window-height="1030"
+     inkscape:window-x="2393"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="display:inline;fill:#ff5555;fill-rule:evenodd;stroke-width:0.173728px;-inkscape-stroke:none;fill-opacity:0.69275361"
+       d="m 226.11001,55.90519 c -9.07252,-1.7e-5 -25.56648,2.123159 -31.08934,5.744835 -0.26457,0.05076 -8.53134,1.633309 -12.7948,1.958144 -14.13428,1.076897 -182.22587,0 -182.22587,0 V 77.56845 c 0,0 168.09159,-1.076896 182.22587,0 4.26346,0.324836 12.53023,1.907387 12.7948,1.958144 5.52286,3.621675 22.01682,5.744852 31.08934,5.744835 16.11657,-1.8e-5 29.18161,-6.573869 29.18161,-14.683119 0,-8.109251 -13.06504,-14.683102 -29.18161,-14.68312 z"
+       sodipodi:nodetypes="scsccscsss"
+       inkscape:export-filename="Brush.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+  </g>
+</svg>

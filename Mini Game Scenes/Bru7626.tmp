@@ -14,19 +14,5 @@ position = Vector2(627, 408)
 scale = Vector2(1.79291, 1.79291)
 
 [node name="MousePointer" parent="." instance=ExtResource("2_y2x03")]
-position = Vector2(256, 87)
-SPEED = 1000
+position = Vector2(109.73, 14.1177)
 MouseSprite = ExtResource("4_vehje")
-
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 412.0
-offset_top = 218.0
-offset_right = 849.0
-offset_bottom = 292.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_colors/background_color = Color(0.593505, 0.726996, 1, 1)
-theme_override_colors/font_color = Color(0, 0.572549, 0.611765, 1)
-theme_override_colors/font_outline_color = Color(0.237866, 0.198231, 0.259666, 1)
-theme_override_font_sizes/font_size = 50
-text = "NICE AND CLEAN"

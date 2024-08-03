@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgbt7gmlnqpio"]
+
+[ext_resource type="Script" path="res://MousePointer.gd" id="1_2cfm6"]
+[ext_resource type="Texture2D" uid="uid://du8xcs16x8v0r" path="res://Assets/AbutPalm.png" id="2_tihqk"]
+[ext_resource type="Texture2D" uid="uid://81foesf42ec0" path="res://Assets/ToothBrushing/Brush.png" id="3_6jkt1"]
+
+[node name="MousePointer" type="CharacterBody2D"]
+position = Vector2(306, 199)
+script = ExtResource("1_2cfm6")
+SPEED = 500
+MouseSprite = ExtResource("2_tihqk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(1, -1)
+polygon = PackedVector2Array(95, -61, 52, -101, 20.2954, -106.765, -3, -111, -57, -89, -96, -47, -107, 16, -81, 76, -21, 106, 12, 102, 57, 85, 88, 54, 104, 8, 106, -33)
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionPolygon2D"]
+position = Vector2(-384, 5)
+texture = ExtResource("3_6jkt1")
